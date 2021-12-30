@@ -1,0 +1,7 @@
+rootProject.name = "ModuleInitPlugin"
+include ':app'
+include ':moduleinitannotation'
+include ':moduleinitapt'
+include ':moduleinitplugin'
+include ':asublibrary'
+include ':asbaselibrary'
