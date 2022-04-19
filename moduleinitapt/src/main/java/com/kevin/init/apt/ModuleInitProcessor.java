@@ -87,6 +87,9 @@ public class ModuleInitProcessor extends AbstractProcessor {
 
   @Override
   public boolean process(Set<? extends TypeElement> set, RoundEnvironment env) {
+    if (set.isEmpty()) {
+      return true;
+    }
     if (env.processingOver()) {
       generateInit();
     } else {
